@@ -37,7 +37,7 @@ export default function HeroSection() {
                             <Counter key={"8k"} value={8000}/>
                             <span className="text-orange-400">+</span>
                         </h1>
-                        <span className="opacity-50 sm:text-base text-sm">In Home Financed</span>
+                        <span className="opacity-50 sm:text-base text-sm">Homes Financed</span>
                     </div>
                     <div className="flex flex-col items-center">
                         <h1 className="sm:text-4xl text-xl font-semibold opacity-80">

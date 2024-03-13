@@ -36,7 +36,7 @@ export default function FooterSection() {
                     className="h-24 object-contain w-fit"
                 />
 
-                <span>#NMLS: 1833868</span>
+                <span>#NMLS: 1833686</span>
 
             </div>
             <p className="mt-8 text-center">© {todayYr} Goldwater all rights reserved</p>
