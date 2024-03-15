@@ -45,6 +45,7 @@ export default function GetApproved() {
                     ref={section01Ref}
                     animate={controls}
                     initial="hidden"
+                    className="flex flex-col"
                     variants={fadeInOutVariants}
                     transition={{ duration: 0.5 }}
                 >
