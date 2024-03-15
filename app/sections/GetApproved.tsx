@@ -60,9 +60,9 @@ export default function GetApproved() {
                     </div>
                     <h2 className="text-3xl py-4 font-semibold">Get Pre-approved</h2>
                     <p className="opacity-70">We&apos;ll collect some information about you and the type of financing you&apos;re looking for. A member of our team will provide you pre-approval letter so you can take the next step forward.</p>
-                    <div className="w-fit mt-4 p-8 py-4 smooth cursor-pointer select-none border-2 border-orange-400 hover:bg-orange-400 hover:border-transparent hover:text-white active:scale-90 hover:scale-105">
+                    <Link href={"https://goldwater.floify.com"} className="w-fit mt-4 p-8 py-4 smooth cursor-pointer select-none border-2 border-orange-400 hover:bg-orange-400 hover:border-transparent hover:text-white active:scale-90 hover:scale-105">
                         Get Started
-                    </div>
+                    </Link>
                 </motion.div>
                 <motion.div 
                     ref={section02Ref}
