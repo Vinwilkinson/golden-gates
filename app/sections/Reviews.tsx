@@ -16,31 +16,21 @@ export default function Reviews() {
                         <SwiperSlide key={review.uid}>
                             <div className="border border-black/10 rounded-md hover:border-black/30  hover:bg-slate-100 cursor-pointer bg-white/50 p-4 smooth">
                                 <div className="flex items-center gap-4">
-                                    <div className="h-12 w-12 rounded-full border overflow-hidden">
-                                        <Image
-                                            src={review.avatar}
-                                            alt={review.fullname}
-                                            height={1000}
-                                            width={1000}
-                                            priority
-                                            className={"w-full h-full object-cover"}
-                                        />
-                                    </div>
                                     <div>
-                                        <h3 className="text-lg font-semibold">{review.fullname}</h3>
+                                        <h3 className="text-xl font-bold">{review.fullname}</h3>
                                         <p className="opacity-60">{review.profession}</p>
                                     </div>
                                 </div>
                                 <div className="mt-4">
                                     <h5 className="font-semibold">{review.reviewTitle}</h5>
-                                    <p className="opacity-50">{review.reviewContent}</p>
+                                    <p className="opacity-50" dangerouslySetInnerHTML={review.reviewContent}></p>
                                 </div>
-                                <div className="flex gap-3 items-center py-4">
-                                    <span className="text-yellow-400"><FaStar /></span>
-                                    <span className="text-yellow-400"><FaStar /></span>
-                                    <span className="text-yellow-400"><FaStar /></span>
-                                    <span className="text-yellow-400"><FaStar /></span>
-                                    <span className="text-yellow-400"><FaStar /></span>
+                                <div className="flex gap-2 items-center py-4">
+                                    <span className="hover:scale-105 text-yellow-400"><FaStar /></span>
+                                    <span className="hover:scale-105 text-yellow-400"><FaStar /></span>
+                                    <span className="hover:scale-105 text-yellow-400"><FaStar /></span>
+                                    <span className="hover:scale-105 text-yellow-400"><FaStar /></span>
+                                    <span className="hover:scale-105 text-yellow-400"><FaStar /></span>
                                 </div>
                             </div>
                         </SwiperSlide>

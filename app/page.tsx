@@ -1,4 +1,4 @@
-import ClientsSection from "./sections/ClientsSection";
+// import ClientsSection from "./sections/ClientsSection";
 import EasyService from "./sections/EasyService";
 import FooterSection from "./sections/FooterSection";
 import GetApproved from "./sections/GetApproved";
@@ -10,16 +10,15 @@ import WhyUs from "./sections/WhyUs";
 
 export default function page() {
     return (
-        <div className="bg-[rgb(0,0,0,0.0125)] scroll-smooth min-h-screen grided-black overflow-x-hidden">
-            <NavSection />
+        <div className="bg-[rgb(0,0,0,0.0125)] scroll-smooth min-h-screen grided-black overflow-x-hidden relative">
+            <NavSection main={0} />
             <HeroSection />
-            <ClientsSection />
+            {/* <ClientsSection /> */}
             <GetApproved />
             <WhyUs />
             <EasyService />
             <Reviews />
             <InfoSection />
-            
             <FooterSection />
         </div>
     )
